@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Python Tutor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pyodide/0.23.4/full/pyodide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 AI Python Tutor for Kids</h1>
+        
+        <!-- Python Code Editor Section -->
+        <div class="editor-container">
+            <textarea id="code-editor" placeholder="Type your Python code here...">print('Hello, World!')</textarea>
+            <button onclick="runPython()">Run Code</button>
+            <pre id="output"></pre>
+        </div>
+        
+        <!-- Chat Section (For Questions, Code Help, etc.) -->
+        <div class="chat-container">
+            <h2>🤖 Robot Tutor</h2>
+            <div id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Ask me about Python!">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <!-- Quiz Section (Hidden initially) -->
+        <div class="quiz-container" style="display:none;">
+            <h2>🎓 Python Quiz</h2>
+            <div id="quiz-box">
+                <p>Question: What is the output of this code? <code>print(3 + 5)</code></p>
+                <input type="text" id="quiz-answer" placeholder="Enter your answer">
+                <button onclick="checkQuizAnswer()">Submit Answer</button>
+            </div>
+        </div>
+        
+        <!-- Start Quiz Button -->
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

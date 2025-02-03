@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 20px;
+}
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 50px 20px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+textarea {
+    width: 90%;
+    height: 150px;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #2575fc;
+    outline: none;
+}
+pre {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    border-radius: 8px;
+    overflow-x: auto;
+    min-height: 60px;
+    font-family: monospace;
+}
+button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #6a11cb;
+}
+.chat-container {
+    margin-top: 20px;
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+.user {
+    text-align: right;
+    color: #2575fc;
+    font-weight: bold;
+}
+.bot {
+    text-align: left;
+    color: #6a11cb;
+    font-weight: bold;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 6px;
+    display: inline-block;
+    max-width: 80%;
+}
